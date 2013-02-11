@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Deployment xmlns="http://schemas.microsoft.com/windowsphone/2009/deployment" AppPlatformVersion="7.1">
+  <App xmlns="" ProductID="{392cf249-eab6-4ee5-9e80-6748d738da63}" Title="Orientation Lock" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal"  Author="Windows Phone Hacker" Description="Disables the accelerometer" Publisher="Windows Phone Hacker">
+    <IconPath IsRelative="true" IsResource="false">acceldisable.png</IconPath>
+    <Capabilities>
+      <Capability Name="ID_CAP_SENSORS"/>
+    </Capabilities>
+    <Tasks>
+      <DefaultTask  Name ="_default" NavigationPage="MainPage.xaml"/>
+    </Tasks>
+    <Tokens>
+      <PrimaryToken TokenID="accelDisableToken" TaskName="_default">
+        <TemplateType5>
+          <BackgroundImageURI IsRelative="true" IsResource="false">acceldisable.png</BackgroundImageURI>
+          <Count>0</Count>
+          <Title>Orientation Lock</Title>
+        </TemplateType5>
+      </PrimaryToken>
+    </Tokens>
+  </App>
+</Deployment>
